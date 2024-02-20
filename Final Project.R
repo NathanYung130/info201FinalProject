@@ -8,8 +8,8 @@ states <- states %>%
   filter(date.posted >= as.Date("2011-01-01") & country == "us")
 
 
-pol_pty <- read.csv("/Users/chris_moy/Downloads/Party leaning - Party leaning.csv")
-ufo_sightings <- read.csv("/Users/chris_moy/Downloads/complete.csv")
+pol_pty <- read.csv("Party Leaning.csv")
+ufo_sightings <- read.csv("scrubbed.csv")
 
 library(dplyr)
 
@@ -26,10 +26,10 @@ ufo_pol_pty_combined_df <- full_join(states, party, by = 'state')
 write.csv(ufo_pol_pty_combined_df, file = "combinedData.csv")
 
 
-pol_pty <- read.csv("/Users/chris_moy/Downloads/Party leaning - Party leaning.csv")
-ufo_sightings <- read.csv("/Users/chris_moy/Downloads/complete.csv")
-landlocked_df <- read.csv("/Users/chris_moy/Downloads/Landlocked States.csv")
-state_pop_df <- read.csv("/Users/chris_moy/Downloads/States Population Size - Sheet1.csv")
+pol_pty <- read.csv("Party Leaning.csv")
+ufo_sightings <- read.csv("complete.csv")
+landlocked_df <- read.csv("Landlocked States.csv")
+state_pop_df <- read.csv("States Population Size - Sheet1.csv")
 #write.csv(ufo_pol_pty_combined_df, file = "UPDATEDcombinedData.csv")
 
 library(dplyr)
