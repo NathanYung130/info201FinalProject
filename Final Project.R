@@ -68,5 +68,7 @@ data_summary <- ufo_pol_pty_combined_df %>%
   summarize(stateMax = max(num.sightings)) %>%
   filter(stateMax == max(stateMax))
 
+write.csv(ufo_pol_pty_combined_df, file = "Final dataSet.csv")
+
 
 
