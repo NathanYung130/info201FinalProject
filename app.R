@@ -3,6 +3,7 @@ library(ggplot2)
 library(maps)
 library(mapproj)
 library(tidyverse)
+library(plotly)
 library(dplyr)
 
 source("ui.R")
