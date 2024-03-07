@@ -23,7 +23,7 @@ overview_tab <- tabPanel("Overview Tab",
 viz_1_sidebar <- sidebarPanel(
   h2("Options for graph"),
   #TODO: Put inputs for modifying graph here
-  checkboxInput("show_sightings", "Show UFO Sightings (uncheck to view state populations)", value = TRUE)
+  checkboxInput("show_sightings", "Show UFO Sightings (uncheck to view state affiliations)", value = TRUE)
 )
 
 viz_1_main_panel <- mainPanel(
